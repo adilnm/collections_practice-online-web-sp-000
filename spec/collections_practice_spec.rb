@@ -66,4 +66,10 @@ describe 'collections practice' do
       expect(add_s(["hand","feet", "knee", "table"])).to eq(["hands","feet", "knees", "tables"])
     end
   end
+  # Question 4
+  describe '#swap_elements_from_to' do
+    it 'swap the arrays index of second and third arguments' do
+      expect(swap_elements_from_to(["blake", "ashley", "scott"],1,2)).to eq(["blake", "scott", "ashley"])
+    end
+  end
 end
