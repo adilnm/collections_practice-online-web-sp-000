@@ -52,7 +52,7 @@ end
 def add_s(array)
   array.each_with_index.collect do|element, index|
   if(index!=1)
-  array.push("#{element}s")
+  array.push("#{element}")
 else
   array.push(element)
 end
