@@ -8,11 +8,11 @@ end
 
 def sort_array_char_count(array)
   array.sort do |a, b|
-  if a == b
+  if a.downcase == b.downcase
     0
-  elsif a < b
+  elsif a.downcase < bdowncase
     -1
-  elsif a > b
+  elsif a.downcase > b.downcase
     1
   end
 end
