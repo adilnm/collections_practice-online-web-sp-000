@@ -58,13 +58,15 @@ array.inject{|sum,n| sum+n}
 end
 
 def add_s(array)
+  new_array=[]
   array.each_with_index.collect do|element, index|
   if(index!=1)
-  array.push("#{element}s")
+  new_array.push("#{element}s")
 else
-  array.push(element)
+  new_array.push(element)
 end
 end
+new_array
 end
 
 
