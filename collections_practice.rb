@@ -59,14 +59,13 @@ end
 
 def add_s(array)
   new_array=[]
-  array.each_with_index do|element, index|
+  array.each_with_index.collect do|element, index|
   if(index!=1)
-  new_array.push("#{element}s")
+  "#{element}s"
 else
-  new_array.push(element)
+  element
 end
 end
-new_array
 end
 
 
