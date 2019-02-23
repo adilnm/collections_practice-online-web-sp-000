@@ -10,7 +10,7 @@ def sort_array_char_count(array)
   array.sort do |a, b|
   if a.downcase == b.downcase
     0
-  elsif a.downcase < bdowncase
+  elsif a.downcase < b.downcase
     -1
   elsif a.downcase > b.downcase
     1
